@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> Bootstrap Webpage</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Web Service provider</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-bs-toggle="modal"
+              data-bs-target="#contactModal"
+              href="#"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="mainCarousel" class="carousel slide container mt-4" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner rounded-4">
+      <div class="carousel-item active">
+        <img src="1.avif" class="d-block w-100" alt="Tech" />
+      </div>
+      <div class="carousel-item">
+        <img src="2.avif" class="d-block w-100" alt="Design" />
+      </div>
+      <div class="carousel-item">
+        <img src="3.avif" class="d-block w-100" alt="Nature" />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Cards Section -->
+  <div class="container mt-5 mb-5">
+    <div class="row text-center">
+      <h2 class="mb-4 fw-bold">Our Features</h2>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="4.avif"card-img-top" alt="Code" />
+          <div class="card-body">
+            <h5 class="card-title">Modern UI</h5>
+            <p class="card-text">
+              Clean, minimal and modern responsive design using Bootstrap 5.
+            </p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="5.avif" class="card-img-top" alt="App" />
+          <div class="card-body">
+            <h5 class="card-title">Interactive UI</h5>
+            <p class="card-text">
+              Experience hover effects, transitions and modals for enhanced UX.
+            </p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="6.webp" class="card-img-top" alt="Data" />
+          <div class="card-body">
+            <h5 class="card-title">Fully Responsive</h5>
+            <p class="card-text">
+              Mobile-first approach with seamless adaptability across devices.
+            </p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-3">
+        <div class="modal-header">
+          <h5 class="modal-title">Contact Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Thank you for showing interest! Reach us at:
+            <strong>Ashutosh Chauhan</strong>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
+</html>

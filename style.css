@@ -1,0 +1,31 @@
+body {
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+  height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 16px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+}
+
+.modal-content {
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
